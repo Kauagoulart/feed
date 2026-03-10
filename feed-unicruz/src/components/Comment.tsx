@@ -5,7 +5,7 @@ import { Avatar } from "./Avatar";
 export function Comment() {
   return (
     <div className={styles.comment}>
-      <Avatar />
+      <Avatar hasBorder={false} src="https://github.com/kauagoulart.png" />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>

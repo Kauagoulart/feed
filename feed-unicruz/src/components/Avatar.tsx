@@ -1,10 +1,15 @@
 import styles from "./Avatar.module.css";
 
-export function Avatar() {
+interface AvatarProps {
+  src: string;
+  hasBorder: boolean;
+}
+
+export function Avatar({ src, hasBorder }: AvatarProps) {
   return (
     <img
-      className={styles.avatar}
-      src="https://github.com/kauagoulart.png"
+      className={hasBorder ? styles.avatarWithBorder : styles.avatar}
+      src={src}
       alt=""
     />
   );

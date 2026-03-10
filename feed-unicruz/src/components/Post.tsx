@@ -3,6 +3,7 @@ import { ptBR } from "date-fns/locale";
 import { Comment } from "./Comment";
 
 import styles from "./Post.module.css";
+import { Avatar } from "./Avatar";
 
 export function Post() {
   const publishedDate = new Date();
@@ -20,11 +21,7 @@ export function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://github.com/kauagoulart.png"
-            alt="Foto de Perfil"
-          />
+          <Avatar hasBorder={true} src="https://github.com/kauagoulart.png" />
           <div className={styles.authorInfo}>
             <strong>Kauã</strong>
             <span>Developer</span>
